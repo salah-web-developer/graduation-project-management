@@ -1,0 +1,32 @@
+ <div class="container">
+  <h1>Administration Panel</h1>
+
+   <!-- Sidebar Component -->
+  <div class="sidebar">
+    <ul>
+      <!-- Replace these placeholders with actual links or router links -->
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </div>
+
+   <!-- Main Content -->
+  <div class="main-content">
+    <h2>Roles Overview</h2>
+
+    <div *ngFor="let roleData of rolesData">
+      <p>{{ roleData.role }}: {{ roleData.count }}</p>
+    </div>
+
+    <!-- Display roles and counts
+    <div *ngFor="let roleData of rolesData" class="role-item">
+      <div class="role-name">{{ roleData.role }}</div>
+      <div class="role-count">{{ roleData.count }}</div>
+    </div> -->
+
+    <div *ngIf="rolesData.length === 0" class="no-data-message">No roles data available</div>
+  </div>
+  <app-registration-form></app-registration-form>
+
+</div>
