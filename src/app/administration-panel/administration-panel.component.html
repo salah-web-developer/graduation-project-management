@@ -27,6 +27,56 @@
 
     <div *ngIf="rolesData.length === 0" class="no-data-message">No roles data available</div>
   </div>
+  <!-- administration-panel.component.html -->
+
+<h2>Teams Information</h2>
+<!-- <div *ngFor="let team of teamsData">
+  <h2>{{ team.title }}</h2>
+  <p>{{ team.format }}</p> -->
+  <!-- <p>{{ team.graduatedFirstSemester ? 'Graduated in first semester' : 'Did not graduate in first semester' }}</p>
+  <h3>Supervisor:</h3>
+  <p>{{ team.supervisor.name }} - {{ team.supervisor.email }}</p>
+  <h3>Leader:</h3>
+  <p>{{ team.leader.name }}{{ team.leader.isLeader ? ' (Team Leader)' : '' }} - {{ team.leader.email }}</p>
+  <h3>Students:</h3>
+  <div *ngFor="let student of team.students">
+    <p>{{ student.name }}{{ student.isLeader ? ' (Team Leader)' : '' }} - {{ student.email }}</p>
+  </div>
+  <hr> -->
+</div>
+
+ <div *ngFor="let team of teamsData">
+  <h3>{{ team.title }}</h3>
+  <p>Project Title: {{ team.title }}</p>
+  <p>Project Format: {{ team.format }}</p>
+  <p>Graduated in First Semester: {{ team.graduatedFirstSemester ? 'Yes' : 'No' }}</p>
+
+  <h4>Supervisor:</h4>
+  <p>ID: {{ team.supervisor.id }}</p>
+  <p>Name: {{ team.supervisor.name }}</p>
+  <p>Phone Number: {{ team.supervisor.phoneNumber }}</p>
+  <p>Specialty: {{ team.supervisor.specialization }}</p>
+  <p>Email: {{ team.supervisor.email }}</p>
+
+  <h4>Students:</h4>
+  <ul>
+    <li *ngFor="let student of team.students">
+      {{ student.isLeader ? '*' : '' }} {{ student.name }} ({{ student.specialization }})
+      <br>
+      University Housing: {{ student.universityNumber }}
+      <br>
+      Phone Number: {{ student.phoneNumber }}
+      <br>
+      Email: {{ student.email }}
+    </li>
+  </ul>
+
+  <hr><br><hr><br>
+</div>
+<hr />
+<hr><hr><hr><hr><hr>
   <app-registration-form></app-registration-form>
 
-</div>
+<!-- </div> -->
+
+

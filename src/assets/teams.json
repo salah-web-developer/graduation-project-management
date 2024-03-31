@@ -1,0 +1,86 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "title": "Team 11",
+      "format": "Research",
+      "graduatedFirstSemester": true,
+      "supervisor": {
+        "id": 1,
+        "name": "Dr. John Doe",
+        "phoneNumber": "123-456-7890",
+        "specialization": "Computer Science",
+        "email": "john.doe@example.com"
+      },
+      "leader": {
+        "id": 101,
+        "name": "Alice Smith",
+        "universityNumber": "U123456",
+        "phoneNumber": "123-456-7890",
+        "specialization": "Data Science",
+        "email": "alice.smith@example.com"
+      },
+      "students": [
+        {
+          "id": 201,
+          "name": "Bob Johnson",
+          "universityNumber": "U654321",
+          "phoneNumber": "987-654-3210",
+          "specialization": "Software Engineering",
+          "email": "bob.johnson@example.com",
+          "isLeader": false
+        },
+        {
+          "id": 202,
+          "name": "Eve Williams",
+          "universityNumber": "U567890",
+          "phoneNumber": "456-789-0123",
+          "specialization": "Web Development",
+          "email": "eve.williams@example.com",
+          "isLeader": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Team 2",
+      "format": "Project",
+      "graduatedFirstSemester": false,
+      "supervisor": {
+        "id": 2,
+        "name": "Dr. Jane Smith",
+        "phoneNumber": "321-654-9870",
+        "specialization": "Electrical Engineering",
+        "email": "jane.smith@example.com"
+      },
+      "leader": {
+        "id": 102,
+        "name": "Charlie Brown",
+        "universityNumber": "U112233",
+        "phoneNumber": "321-654-9870",
+        "specialization": "Machine Learning",
+        "email": "charlie.brown@example.com"
+      },
+      "students": [
+        {
+          "id": 203,
+          "name": "David Lee",
+          "universityNumber": "U445566",
+          "phoneNumber": "789-012-3456",
+          "specialization": "Robotics",
+          "email": "david.lee@example.com",
+          "isLeader": false
+        },
+        {
+          "id": 204,
+          "name": "Grace Taylor",
+          "universityNumber": "U778899",
+          "phoneNumber": "012-345-6789",
+          "specialization": "Artificial Intelligence",
+          "email": "grace.taylor@example.com",
+          "isLeader": true
+        }
+      ]
+    }
+  ]
+}

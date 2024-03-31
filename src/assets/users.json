@@ -20,9 +20,9 @@
     },
     {
       "id": 4,
-      "username": "supervisor1",
-      "password": "supervisor1pass",
-      "role": "supervisor"
+      "username": "doctor1",
+      "password": "doctor1pass",
+      "role": "doctor"
     },
     {
       "id": 5,
@@ -38,21 +38,27 @@
     },
     {
       "id": 7,
-      "username": "supervisor2",
-      "password": "supervisor2pass",
-      "role": "supervisor"
+      "username": "doctor2",
+      "password": "doctor2pass",
+      "role": "doctor"
     },
     {
       "id": 8,
-      "username": "supervisor3",
-      "password": "supervisor3pass",
-      "role": "supervisor"
+      "username": "doctor3",
+      "password": "doctor3pass",
+      "role": "doctor"
     },
     {
       "id": 9,
-      "username": "supervisor4",
-      "password": "supervisor4pass",
-      "role": "supervisor"
+      "username": "doctor4",
+      "password": "doctor4pass",
+      "role": "doctor"
+    },
+    {
+      "id": 10,
+      "username": "doctor5",
+      "password": "doctor5pass",
+      "role": "doctor"
     }
   ]
 }

@@ -15,6 +15,8 @@ import { LoginGuard } from './guards/login.guard';
 import { AdministrationPanelComponent } from './administration-panel/administration-panel.component';
 import { AdminAuthGuard } from './guards/admin-auth.guard';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { TeamComponent } from './team/team.component';
+import { TeamListComponent } from './team-list/team-list.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthGuard] },
@@ -46,6 +48,8 @@ const routes: Routes = [
     HomeComponent,
     AdministrationPanelComponent,
     RegistrationFormComponent,
+    TeamComponent,
+    TeamListComponent,
   ],
   imports: [
     BrowserModule,
